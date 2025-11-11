@@ -8,7 +8,7 @@ class Range
     System.out.println(Short.MAX_VALUE);
     System.out.println(Integer.MIN_VALUE);
     System.out.println(Integer.MAX_VALUE); 
-    System.out.println(long.MIN_VALUE);
+    System.out.println(Long.MIN_VALUE);
     System.out.println(Long.MAX_VALUE);
     System.out.println(Double.MIN_VALUE);
     System.out.println(Double.MAX_VALUE);
