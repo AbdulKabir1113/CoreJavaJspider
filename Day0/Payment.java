@@ -1,3 +1,4 @@
+package Day0;
 class Payment
 {
     public static void main(String[] args) {

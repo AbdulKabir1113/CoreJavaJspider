@@ -9,7 +9,7 @@ public class SmallestAmongFive {
         // int res = a<b ? ((a<c?a:c)) : ((b<c?b:c));
         int res1 = a<b && a<c && a<d && a<e ? a
                 :  b<c && b<d && b<e? b
-                    : c<d&&c<e ? c 
+                    : c<d && c<e ? c 
                         : d<e ? d  
                             :e;
         // System.out.println(res);

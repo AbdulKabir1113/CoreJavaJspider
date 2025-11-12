@@ -1,3 +1,4 @@
+package Day0;
 public class GreaterValue {
     public static void main(String[] args) {
         int a = 10;

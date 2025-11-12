@@ -1,3 +1,4 @@
+package Day0;
 class Detail1
 {
   public static void main(String [] args)
