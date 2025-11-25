@@ -11,15 +11,15 @@ public class JobPortal {
 
         System.out.println("Enter Age: ");
         int age = sc.nextInt();
-        sc.nextLine(); 
+        
 
         System.out.println("Enter Gender (M/F): ");
         char gender = sc.next().charAt(0);
-        sc.nextLine(); 
+        sc.nextLine();
 
         System.out.println("Enter Marital Status: ");
         String maritalStatus = sc.nextLine();
-
+        
         boolean check = isEligible(age, maritalStatus, gender);
 
         if (check) {
