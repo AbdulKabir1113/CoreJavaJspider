@@ -6,7 +6,7 @@ public class StudentDriver {
 
 	public static void main(String[] args) {
 		
-		System.out.println("1) Without Data \n 2) Enter Name \n 3) Enter Name & Sid \n 4) Enter Name, Sid & Phone \n 5) Enter Name, Sid, Phone & Emai");
+		System.out.println("1) Without Data \n 2) Enter Name \n 3) Enter Name & Sid \n 4) Enter Name, Sid & Phone No \n 5) Enter Name, Sid, Phone No & Email");
 		 Scanner sc = new Scanner(System.in);
 		 int ch = sc.nextInt();
 		 
