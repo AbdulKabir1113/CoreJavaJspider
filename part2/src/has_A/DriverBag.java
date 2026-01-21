@@ -19,10 +19,11 @@ public class DriverBag {
         Bag bg = new Bag("JB", "Black", 1000, b, b1, p, p1, p2, lb);
 
         Scanner sc = new Scanner(System.in);
-        boolean bag = true;
+        boolean mainMenu = true;
 
-        while (bag) {
-            System.out.println("1) Bag Details\n2) Open Bag\n3) Exit");
+        // ================= MAIN MENU =================
+        while (mainMenu) {
+            System.out.println("\n1) Bag Details\n2) Open Bag\n3) Exit");
             int ch = sc.nextInt();
 
             switch (ch) {
@@ -34,96 +35,113 @@ public class DriverBag {
                 }
 
                 case 2 -> {
-                    boolean inSideBag = true;
+                    boolean insideBag = true;
 
-                    while (inSideBag) {
-                        System.out.println("1) Book\n2) Pen\n3) LaptopBag\n4) Exit");
-                        ch = sc.nextInt();
+                    // ============ INSIDE BAG ============
+                    while (insideBag) {
+                        System.out.println("\n1) Book\n2) Pen\n3) LaptopBag\n4) Exit");
+                        int in = sc.nextInt();
 
-                        switch (ch) {
+                        switch (in) {
 
+                            // ---------------- BOOK ----------------
                             case 1 -> {
-                                System.out.println("1) Book1\n2) Book2\n3) Exit");
-                                int ch2 = sc.nextInt();
+                                boolean bookMenu = true;
+                                while (bookMenu) {
+                                    System.out.println("\n1) Book1\n2) Book2\n3) Exit");
+                                    int bch = sc.nextInt();
 
-                                switch (ch2) {  
-                                    case 1 -> {
-                                        System.out.println("Book1 Title : " + bg.b.title);
-                                        System.out.println("Book1 Author: " + bg.b.author);
-                                        System.out.println("Book1 Price : " + bg.b.price);
+                                    switch (bch) {
+                                        case 1 -> {
+                                            System.out.println("Book1 Title  : " + bg.b.title);
+                                            System.out.println("Book1 Author : " + bg.b.author);
+                                            System.out.println("Book1 Price  : " + bg.b.price);
+                                        }
+                                        case 2 -> {
+                                            System.out.println("Book2 Title  : " + bg.b1.title);
+                                            System.out.println("Book2 Author : " + bg.b1.author);
+                                            System.out.println("Book2 Price  : " + bg.b1.price);
+                                        }
+                                        case 3 -> bookMenu = false;
                                     }
-                                    case 2 -> {
-                                        System.out.println("Book2 Title : " + bg.b1.title);
-                                        System.out.println("Book2 Author: " + bg.b1.author);
-                                        System.out.println("Book2 Price : " + bg.b1.price);
-                                    }
-                                    case 3 -> inSideBag = false;
                                 }
                             }
 
+                            // ---------------- PEN ----------------
                             case 2 -> {
-                                System.out.println("1) Pen1\n2) Pen2\n3) Pen3\n4) Exit");
-                                int ch3 = sc.nextInt();
+                                boolean penMenu = true;
+                                while (penMenu) {
+                                    System.out.println("\n1) Pen1\n2) Pen2\n3) Pen3\n4) Exit");
+                                    int pch = sc.nextInt();
 
-                                switch (ch3) {
-                                    case 1 -> {
-                                        System.out.println("Pen1 Brand : " + bg.p.brand);
-                                        System.out.println("Pen1 Color : " + bg.p.color);
-                                        System.out.println("Pen1 Price : " + bg.p.price);
+                                    switch (pch) {
+                                        case 1 -> {
+                                            System.out.println("Pen1 Brand : " + bg.p.brand);
+                                            System.out.println("Pen1 Color : " + bg.p.color);
+                                            System.out.println("Pen1 Price : " + bg.p.price);
+                                        }
+                                        case 2 -> {
+                                            System.out.println("Pen2 Brand : " + bg.p1.brand);
+                                            System.out.println("Pen2 Color : " + bg.p1.color);
+                                            System.out.println("Pen2 Price : " + bg.p1.price);
+                                        }
+                                        case 3 -> {
+                                            System.out.println("Pen3 Brand : " + bg.p2.brand);
+                                            System.out.println("Pen3 Color : " + bg.p2.color);
+                                            System.out.println("Pen3 Price : " + bg.p2.price);
+                                        }
+                                        case 4 -> penMenu = false;
                                     }
-                                    case 2 -> {
-                                        System.out.println("Pen2 Brand : " + bg.p1.brand);
-                                        System.out.println("Pen2 Color : " + bg.p1.color);
-                                        System.out.println("Pen2 Price : " + bg.p1.price);
-                                    }
-                                    case 3 -> {
-                                        System.out.println("Pen3 Brand : " + bg.p2.brand);
-                                        System.out.println("Pen3 Color : " + bg.p2.color);
-                                        System.out.println("Pen3 Price : " + bg.p2.price);
-                                    }
-                                    case 4 -> inSideBag = false;
                                 }
                             }
 
+                            // ---------------- LAPTOP BAG ----------------
                             case 3 -> {
-                                System.out.println("1) LaptopBag Details\n2) Open LaptopBag\n3) Exit");
-                                int ch4 = sc.nextInt();
+                                boolean lapBagMenu = true;
+                                while (lapBagMenu) {
+                                    System.out.println("\n1) LaptopBag Details\n2) Open LaptopBag\n3) Exit");
+                                    int lch = sc.nextInt();
 
-                                switch (ch4) {
-                                    case 1 -> {
-                                        System.out.println("LaptopBag Brand : " + bg.lb.brand);
-                                        System.out.println("LaptopBag Color : " + bg.lb.color);
-                                        System.out.println("LaptopBag Price : " + bg.lb.price);
-                                    }
-                                    case 2 -> {
-                                        System.out.println("1) Laptop\n2) Charger\n3) Exit");
-                                        int ch5 = sc.nextInt();
+                                    switch (lch) {
+                                        case 1 -> {
+                                            System.out.println("LaptopBag Brand : " + bg.lb.brand);
+                                            System.out.println("LaptopBag Color : " + bg.lb.color);
+                                            System.out.println("LaptopBag Price : " + bg.lb.price);
+                                        }
+                                        case 2 -> {
+                                            boolean laptopMenu = true;
+                                            while (laptopMenu) {
+                                                System.out.println("\n1) Laptop\n2) Charger\n3) Exit");
+                                                int lc = sc.nextInt();
 
-                                        switch (ch5) {
-                                            case 1 -> {
-                                                System.out.println("Laptop Brand : " + lb.l.brand);
-                                                System.out.println("Laptop Color : " + lb.l.color);
-                                                System.out.println("Laptop Price : " + lb.l.price);
-                                            }
-                                            case 2 -> {
-                                                System.out.println("Charger Brand : " + lb.c.brand);
-                                                System.out.println("Charger Watt : " + lb.c.walt);
+                                                switch (lc) {
+                                                    case 1 -> {
+                                                        System.out.println("Laptop Brand : " + bg.lb.l.brand);
+                                                        System.out.println("Laptop Color : " + bg.lb.l.color);
+                                                        System.out.println("Laptop Price : " + bg.lb.l.price);
+                                                    }
+                                                    case 2 -> {
+                                                        System.out.println("Charger Brand : " + bg.lb.c.brand);
+                                                        System.out.println("Charger Watt  : " + bg.lb.c.walt);
+                                                    }
+                                                    case 3 -> laptopMenu = false;
+                                                }
                                             }
                                         }
+                                        case 3 -> lapBagMenu = false;
                                     }
-                                    case 3 -> inSideBag = false;
                                 }
                             }
 
-                            case 4 -> inSideBag = false;
+                            case 4 -> insideBag = false;
                         }
                     }
                 }
 
-                case 3 -> bag = false;
+                case 3 -> mainMenu = false;
             }
         }
+
         sc.close();
     }
 }
-
