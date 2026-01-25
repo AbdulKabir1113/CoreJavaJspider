@@ -5,7 +5,7 @@ public class Parent {
 	static {
 		System.out.println("Parent is Loaded");
 	}
-	static void scold() {
+	 void scold() {
 		System.out.println("Scolding Kids");
 	}
 }

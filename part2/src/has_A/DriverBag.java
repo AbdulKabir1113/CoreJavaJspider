@@ -9,14 +9,14 @@ public class DriverBag {
         Book b1 = new Book("Python", "Guido", 1000);
 
         Pen p = new Pen("Cello", "Black", 20);
-        Pen p1 = new Pen("Pen1", "Red", 30);
-        Pen p2 = new Pen("Pen2", "Blue", 10);
+        Pen p1 = new Pen("Pentonic", "Red", 30);
+        Pen p2 = new Pen("Meow", "Blue", 10);
 
-        LapTop l = new LapTop("HP", "Silver", 55000);
+        LapTop l = new LapTop("HP", "Gray", 55000);
         Charger c = new Charger("HP", 65);
-        LapTopBag lb = new LapTopBag("HP", "Black", 300, l, c);
+        LapTopBag lb = new LapTopBag("HP", "Black", 1300, l, c);
 
-        Bag bg = new Bag("JB", "Black", 1000, b, b1, p, p1, p2, lb);
+        Bag bg = new Bag("SkyBag", "Black", 1000, b, b1, p, p1, p2, lb);
 
         Scanner sc = new Scanner(System.in);
         boolean mainMenu = true;
