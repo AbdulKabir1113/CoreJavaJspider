@@ -10,5 +10,4 @@ public Dog(String breed, int age) {
 	this.breed=breed;
 	this.age=age;
 }
-
 }
