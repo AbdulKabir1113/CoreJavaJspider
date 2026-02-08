@@ -1,6 +1,5 @@
 package PaymentProject;
 
-
 public class CreditCardPayment extends Payment {
 
 	public void makePayment(double amount) {
