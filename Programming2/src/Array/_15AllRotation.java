@@ -1,6 +1,6 @@
 package Array;
 
-public class AllRotation {
+public class _15AllRotation {
 
 	
 	    public static void main(String[] args) {

@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Scanner;
 
-public class Find2ndMaximum {
+public class _08Find2ndMaximum {
 
 	public static void main(String[] args) {
 		System.out.println("Enter the Array Size");

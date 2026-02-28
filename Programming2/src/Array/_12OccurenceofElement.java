@@ -1,6 +1,6 @@
 package Array;
 
-public class OccurenceofElement {
+public class _12OccurenceofElement {
 
 	public static void main(String[] args) {
 		int a[]= {1,2,3,4,5,6,4,3,4,6,4};
