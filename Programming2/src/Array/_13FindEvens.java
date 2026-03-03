@@ -14,7 +14,7 @@ public class _13FindEvens {
 	            }
 	        }
 
-	     
+	    
 	        int evenArr[] = new int[count];
 
 	        int j = 0;
