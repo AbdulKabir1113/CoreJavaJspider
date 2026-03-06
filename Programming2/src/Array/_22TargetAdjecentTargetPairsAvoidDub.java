@@ -12,7 +12,5 @@ public class _22TargetAdjecentTargetPairsAvoidDub {
 				i++;
 					}
 				}
-				
-			
 	}
 }
