@@ -6,7 +6,7 @@ public class _25Insertion {
 
 	public static void main(String[] args) {
 		int a[] = {1,2,3,5};
-		int p = 4;
+		int p = 8;
 		int ele = 4;
 		int size = a.length;
 		
