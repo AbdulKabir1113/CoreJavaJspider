@@ -10,7 +10,8 @@ public class NumberFactorsExactlyEqualNumber {
 				System.out.println("Factors are: "+i);
 			}
 		}
-		return 
+		return true;
+//		return false;65
 	}
 
 	public static void main(String args []) {
