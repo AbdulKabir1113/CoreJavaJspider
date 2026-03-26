@@ -31,23 +31,43 @@ public class CharOccurence {
 //	    	
 //	    }
 		// 2nd method
-		String str = "Programming";
-		String visited = "";
+//		String str = "Programming";
+//		String visited = "";
+//		
+//		for(int i=0; i<str.length(); i++) {
+//			int c = 0;
+//			char ch = str.charAt(i);
+//			
+//			if(!visited.contains(ch+"")) {
+//				for(int j=0; j<str.length();j++) {
+//					if(str.charAt(j) == ch) {
+//						c++;
+//					}
+//					
+//				}
+//				System.out.println(ch+"->"+c);
+//				visited+=ch;
+//			}
+//		}
 		
-		for(int i=0; i<str.length(); i++) {
-			int c = 0;
-			char ch = str.charAt(i);
-			
-			if(!visited.contains(ch+"")) {
-				for(int j=0; j<str.length();j++) {
-					if(str.charAt(j) == ch) {
-						c++;
-					}
+		// 3rd method
+				String str = "Programming";
+				String visited = "";
+				
+				for(int i=0; i<str.length(); i++) {
+					int c = 0;
+					char ch = str.charAt(i);
 					
+					if(visited.indexOf(ch )==-1) {
+						for(int j=0; j<str.length();j++) {
+							if(str.charAt(j) == ch) {
+								c++;
+							}
+							
+						}
+						System.out.println(ch+"->"+c);
+						visited+=ch;
+					}
 				}
-				System.out.println(ch+"->"+c);
-				visited+=ch;
-			}
-		}
 	}
 }
